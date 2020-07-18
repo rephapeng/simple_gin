@@ -13,7 +13,7 @@ APP_NAME="simple_gin"
 #build go as binary
 go build .
 
-#build docker
+#build docker with read the ENV argument
 docker build --build-arg STATE_ENV=$ENV  -t ${REGISTRY}${APP_NAME}:${REVISION} .
 
 
